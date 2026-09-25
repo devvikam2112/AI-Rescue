@@ -1,0 +1,69 @@
+# ==============================================================================
+# AI-Rescue: .gitignore (Security, Tooling & Build Artifacts)
+# ==============================================================================
+
+# Compiled Java & Maven Artifacts
+backend/target/
+backend/*.jar
+backend/*.war
+*.class
+*.log
+.mvn/timing.properties
+
+# Node.js & React Frontend Artifacts
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.vite/
+frontend/.eslintcache
+frontend/coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python & AI Engine Artifacts
+ai-service/__pycache__/
+ai-service/*.py[cod]
+ai-service/*$py.class
+ai-service/.pytest_cache/
+ai-service/venv/
+ai-service/env/
+ai-service/ENV/
+ai-service/*.egg-info/
+ai-service/dist/
+ai-service/build/
+
+# IDE & Editor Configurations
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.settings/
+
+# Environment Variables & Security Secrets (NEVER COMMIT)
+.env
+.env.*
+!.env.example
+application-secrets.properties
+application-secrets.yml
+*.pem
+*.key
+*.cert
+*.jks
+
+# Operating System Files
+Thumbs.db
+Desktop.ini
+.DS_Store
+ehthumbs.db
+$RECYCLE.BIN/
+
+# Temporary / Scratch Files
+tmp/
+temp/
+*.tmp
